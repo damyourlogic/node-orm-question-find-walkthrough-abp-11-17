@@ -28,7 +28,7 @@ class Question{
       })
     })
   }
-  static find(id){
+  static Find(id){
     return new Promise(function(resolve){
       const question = new Question()
       resolve(question)

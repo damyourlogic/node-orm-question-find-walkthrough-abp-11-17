@@ -30,7 +30,8 @@ class Question{
   }
   static find(id){
     return new Promise(function(resolve){
-      resolve("This should be a found question")
+      const question = new Question()
+      resolve(question)
     })
   }
 }

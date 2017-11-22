@@ -33,7 +33,6 @@ class Question{
     return new Promise(function(resolve){
       db.get(sql, [id], (function(err, resolve){
         const question = new Question(result.content)
-        question.result = result.content
         question.id = result.id
         resolve(question)
       })
